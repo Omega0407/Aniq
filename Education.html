@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8dc;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #cccccc;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 10px 20px;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .slides {
+      display: none;
+      margin: auto;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .image-section {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #cccccc;
+      padding: 20px;
+      font-weight: bold;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+    }
+
+    .social-links img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+      transition: 0.3s ease-in-out;
+    }
+
+    /* Back to Top Button */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+      font-size: 18px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 15px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    #backToTopBtn:hover {
+      background-color: #34495e;
+    }
+  </style>
+</head>
+<body id="top">
+
+  <nav>
+    <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="Biodata.html">Biodata</a></li>
+      <li><a href="Experiance.html">Experience</a></li>
+      <li><a href="Education.html">Education</a></li>
+      <li><a href="Family.html">Family</a></li>
+      <li><a href="Galery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <br>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="slides active">
+      <img src="IMJ/sk1.jpg" alt="Image 1" width="150px" height="150px">
+    </div>
+    <div class="slides">
+      <img src="IMJ/sk2.png" alt="Image 2" width="150px" height="150px">
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].classList.add("active");
+      setTimeout(showSlides, 2000);
+    }
+    showSlides();
+  </script>
+
+  <br>
+
+  <h1>My Primary School Experience</h1>
+  <p>
+    I started my primary school education in <strong>2011 at Sekolah Kebangsaan Jalan Raja Syed Alwi</strong>. I studied there for 4 years, from 2011 to 2014. During my time there, I enjoyed learning new things and making many new friends.
+  </p>
+  <p>
+    After that, I continued at <strong>Sekolah Kebangsaan Seri Perlis</strong> from 2014 to 2016. I participated in various school activities and took the <strong>UPSR exam</strong> in 2016.
+  </p>
+
+  <br><br><br>
+
+  <div class="image-section">
+    <img src="IMJ/sk3.png" width="150px" height="150px" alt="SMK">
+  </div>
+  <h1>My Secondary School Experience</h1>
+  <p>
+    I started my secondary school at <strong>Sekolah Menengah Kebangsaan Perlis</strong> in 2017 until 2021. I took the <strong>PT3 exam</strong> in 2019 and <strong>SPM</strong> in 2021.
+  </p>
+
+  <h1>My STPM Experience</h1>
+  <p>
+    After SPM, I continued to Form 6 at the same school (SMK Perlis) in 2022 until 2023. STPM helped me prepare for higher education with a deeper understanding of academic subjects.
+  </p>
+
+  <br><br><br>
+
+  <div class="image-section">
+    <img src="IMJ/sk4.jpg" width="300px" height="150px" alt="UniMAP">
+  </div>
+  <h1>My University Experience</h1>
+  <p>
+    I am currently studying at <strong>Universiti Malaysia Perlis (UniMAP)</strong>, taking a degree in <strong>Bachelor of Interactive Media Technology with Honours</strong>.
+  </p>
+  <p>
+    This journey has been full of growth and discovery, both academically and personally.
+  </p>
+
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <p>Name: Muhammad Aniq Najmi Bin Rizlan</p>
+      <p>Matric No: 241570012</p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/muhammad.rizlan.52/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" title="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@aniqgamer" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" title="TikTok">
+      </a>
+      <a href="https://wa.me/601114914359" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" title="WhatsApp">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">↑</button>
+
+  <script>
+    // Show back-to-top button when scrolling
+    window.onscroll = function () {
+      const btn = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
